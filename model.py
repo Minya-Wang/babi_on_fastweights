@@ -19,6 +19,7 @@ class fast_weights_model(object):
 
             # input weights (proper initialization)
             self.W_x = tf.Variable(tf.random_uniform(         #均匀随机分布 [[............]]
+
                 [FLAGS.num_classes, FLAGS.num_hidden_units],
                 -np.sqrt(2.0/FLAGS.num_classes),
                 np.sqrt(2.0/FLAGS.num_classes)),
